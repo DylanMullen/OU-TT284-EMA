@@ -1,9 +1,10 @@
 @import "components/navbar.css";
 @import "components/buttons.css";
+@import "components/input.css";
 
 :root
 {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Calibri";
   --navbar-topMenu: #AAB7B8;
   --navbar-topMenu-active: #2980B9;
@@ -17,21 +18,68 @@ body,html
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: lightgray;
 }
 
 main
 {
-  margin-left:15rem;
-  padding: 2px 1rem;
+  margin: 0 1rem 0 16rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap:1rem;
+  grid-template-rows: 50vh auto;
 }
 
 section
 {
-  margin:10px 0;
   width: 100%;
   height: 100%;
 }
 
+#editProfile
+{
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / span 2;
+}
+
+#walkingStats
+{
+  height: 100%;
+  grid-column: 1 / span 3;
+}
+
+.profileInformation
+{
+  width: 100%;
+  background-color: white;
+  grid-row: 0 / -1;
+}
+
+.content
+{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+.rounded
+{
+  border-radius: 50%;
+}
 
 .sectionHeader
 {
