@@ -1,0 +1,70 @@
+
+/**/
+.nav-mainMenu
+{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 15rem;
+  background-color: black;
+  position: fixed;
+}
+
+.nav
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  height: 100%;
+}
+
+.nav-logo
+{
+  padding: 5px 0;
+}
+
+.nav-bottom
+{
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+.nav-item
+{
+  width: 100%;
+}
+
+.nav-item:hover
+{
+  transition: background 300ms;
+  background-color: white;
+}
+
+.nav-link
+{
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+.nav-link span
+{
+  padding: 0 .75rem;
+}
+
+.navbar-topMenu
+{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-topMenu ul > li > a
+{
+  display: flex;
+  align-items: center;
+}
