@@ -47,6 +47,11 @@
   background-color: #1A5276;
 }
 
+.nav-subitem-active
+{
+  background-color: #154360;
+}
+
 .nav-link
 {
   text-decoration: none;
@@ -67,6 +72,19 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.nav-dropdown
+{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left:  2rem;
+}
+
+.nav-dropdown > .nav-item:hover
+{
+  background-color: #154360;
 }
 
 .nav-topMenu ul > li > a
