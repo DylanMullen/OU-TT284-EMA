@@ -42,6 +42,11 @@
   background-color: #1A5276;
 }
 
+.nav-item-active
+{
+  background-color: #1A5276;
+}
+
 .nav-link
 {
   text-decoration: none;
