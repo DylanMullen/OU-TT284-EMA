@@ -33,6 +33,42 @@ main
   flex-direction: column;
 }
 
+#main-news
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.news
+{
+  background-color: gray;
+}
+.news:nth-child(2n)
+{
+  background-color: darkgray !important;
+}
+
+.news-contents
+{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.news tr
+{
+  background-color: inherit !important;
+}
+
+.news-edit-input
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 2;
+}
+
 .event
 {
   display: flex;

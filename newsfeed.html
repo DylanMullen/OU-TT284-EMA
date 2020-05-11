@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Newsfeed | OUWC</title>
+    <link rel="stylesheet" href="res/css/style.css">
+  </head>
+  <body>
+    <nav class="nav-mainMenu">
+      <ul class="nav">
+        <li class="nav-logo">
+          <a href="#">
+            <img src="res/imgs/imageLargeSquare.jpg" alt="">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="res/imgs/imageSmallSquare.jpg" alt="">
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="members.html">
+            <img src="res/imgs/imageSmallSquare.jpg" alt="">
+            <span>Members</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item-active">
+          <a class="nav-link" href="announcements.html">
+            <img src="res/imgs/imageSmallSquare.jpg" alt="">
+            <span>News & Announcements</span>
+          </a>
+          <ul class="nav-dropdown">
+            <li class="nav-item  nav-subitem-active">
+              <a class="nav-link" href="newsfeed.html">
+                <img src="res/imgs/imageSmallSquare.jpg" alt="">
+                <span>News Feed</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="announcements.html">
+                <img src="res/imgs/imageSmallSquare.jpg" alt="">
+                <span>Announcements</span>
+              </a>
+            </li>
+           </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="members.html">
+            <img src="res/imgs/imageSmallSquare.jpg" alt="">
+            <span>Events</span>
+          </a>
+        </li>
+        <li class="nav-item nav-bottom">
+          <a class="nav-link" href="#">
+            <img src="res/imgs/imageSmallSquare.jpg" alt="">
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-news">
+      <section id="newsfeed">
+        <div class="sectionHeader">
+          <h1>Newsfeed</h1>
+        </div>
+        <div class="news">
+          <div class="news-contents">
+            <table>
+              <tbody>
+                <tr>
+                  <td><h2>Title</h2></td>
+                  <td><h3>Date</h3></td>
+                  <td><h3>Contents</h3></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="buttonGroup">
+              <button class="btn-edit" type="button" name="button">Edit</button>
+              <button class="btn-deny" type="button" name="button">Delete</button>
+            </div>
+          </div>
+        </div>
+        <div class="news">
+          <div class="news-contents">
+            <table>
+              <tbody>
+                <tr>
+                  <td><h2>Title</h2></td>
+                  <td><h3>Date</h3></td>
+                  <td><h3>Contents</h3></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="buttonGroup">
+              <button class="btn-edit" type="button" name="button">Edit</button>
+              <button class="btn-deny" type="button" name="button">Delete</button>
+            </div>
+          </div>
+          <div class="event-edit event-selected">
+              <div class="news-edit-input">
+                <div class="input-group">
+                  <span>Title</span>
+                  <input type="text" name="" value="Roe Green">
+                </div>
+                <div class="input-group input-group-vertical">
+                  <span class="span-top">Content</span>
+                  <div class="container">
+                    <textarea name="name" rows="6" cols="120">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="buttonGroup">
+                <button class="btn-approve" type="button" name="button">Save</button>
+                <button class="btn-edit" type="button" name="button">Cancel</button>
+                <button class="btn-deny" type="button" name="button">Delete</button>
+              </div>
+            </div>
+        </div>
+        <div class="news">
+          <div class="news-contents">
+            <table>
+              <tbody>
+                <tr>
+                  <td><h2>Title</h2></td>
+                  <td><h3>Date</h3></td>
+                  <td><h3>Contents</h3></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="buttonGroup">
+              <button class="btn-edit" type="button" name="button">Edit</button>
+              <button class="btn-deny" type="button" name="button">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sectionFooter">
+          <div class="buttonGroup">
+            <button class="btn-approve" type="button" name="button">Create News</button>
+            <button class="btn-deny" type="button" name="button">Clear Newsfeed</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
 }
+.input-group-vertical
+{
+  flex-direction: column;
+}
 .input-group input
 {
   font-family: "Calibri";
@@ -16,6 +20,7 @@
   border: 0;
   border-radius: 0 10px 10px 0;
   margin: 0;
+  outline: none;
 }
 .input-group span
 {
@@ -26,7 +31,34 @@
   height: 100%;
 }
 
-.input-group input:focus
+.span-top
+{
+  border-radius: 10px 10px 0 0 !important;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 !important;
+}
+
+.input-group textarea
+{
+  font-family: "Calibri";
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  font-size: inherit;
+  border: 0;
+  border-radius: 0 0 10px 10px;
+  margin: 0;
+  outline: none;
+  resize: none;
+}
+.input-group .container
+{
+  display: flex;
+  width: 100%;
+}
+
+.input-group input:focus,textarea:focus
 {
   background-color: lightgray;
 }
