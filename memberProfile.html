@@ -26,6 +26,12 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="newsfeed.html">
+            <img src="res/imgs/imageSmallSquare.jpg" alt="">
+            <span>News & Announcements</span>
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">
             <img src="res/imgs/imageSmallSquare.jpg" alt="">
             <span>Events</span>
@@ -39,123 +45,133 @@
         </li>
       </ul>
     </nav>
-    <main>
-      <div class="container">
-        <section id="editProfile">
-          <div class="sectionHeader">
-            <h1>Edit Profile</h1>
-          </div>
-          <div class="content">
-            <img class="rounded" src="res/imgs/imageLargeSquare.jpg" alt="profile picture">
-            <div class="userInformation">
-              <div class="input-group">
-                <span>Name:</span>
-                <input type="text" name="nameField" value="John Smith">
-              </div>
-              <div class="input-group">
-                <span>Age:</span>
-                <input type="text" name="nameField" value="18">
-              </div>
-              <div class="input-group">
-                <span>Email:</span>
-                <input type="text" name="nameField" value="Loremipsum@dolor.sit">
-              </div>
+    <main class="container">
+      <section id="editProfile">
+        <div class="sectionHeader">
+          <h1>Edit Profile</h1>
+        </div>
+        <div class="profileContent">
+          <img class="rounded" src="res/imgs/imageLargeSquare.jpg" alt="profile picture">
+          <div class="userInformation">
+            <div class="input-group">
+              <span>Name</span>
+              <input type="text" name="" value="John Smuth">
+            </div>
+            <div class="input-group">
+              <span>Age</span>
+              <input type="text" name="" value="18">
+            </div>
+            <div class="input-group">
+              <span>Email</span>
+              <input type="text" name="" value="loremipsum@dolor.sit">
+            </div>
+            <div class="input-group">
+              <span>Activity</span>
+              <select class="" name="">
+                <option class="active" value="active">Active</option>
+                <option class="semi-active" value="active">Semi-Active</option>
+                <option class="inactive" value="active">Inactive</option>
+              </select>
             </div>
           </div>
-        </section>
-        <aside class="profileInformation">
-          <div class="sectionHeader">
-            <h1>Profile Stats</h1>
+          <div class="buttonGroup">
+            <button class="btn-approve bg-stretch" type="button" name="button">Save</button>
+            <button class="btn-edit bg-stretch" type="button" name="button">Cancel</button>
           </div>
-          <div class="content-vertical">
-            <figure>
-              <img src="res/imgs/imageWideRectangle.jpg" alt="">
-              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit</figcaption>
-            </figure>
-            <figure>
-              <img src="res/imgs/imageWideRectangle.jpg" alt="">
-              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit</figcaption>
-            </figure>
-            <figure>
-              <img src="res/imgs/imageWideRectangle.jpg" alt="">
-              <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit</figcaption>
-            </figure>
-          </div>
-        </aside>
-        <section id="walkingStats">
-          <div class="sectionHeader">
-            <h1>Walking Stats</h1>
-          </div>
-          <div class="content">
-            <table>
-              <thead>
-                <tr>
-                  <th>Event</th>
-                  <th>Date</th>
-                  <th>Distance</th>
-                  <th>Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td class="inactive">Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td>Lorem ipsum dolor sit</td>
-                  <td class="active">Lorem ipsum dolor sit</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
+      <aside class="profileInformation">
+        <div class="sectionHeader">
+          <h1>Profile Stats</h1>
+        </div>
+        <div class="content-vertical">
+          <figure>
+            <img src="res/imgs/imageWideRectangle.jpg" alt="">
+            <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit</figcaption>
+          </figure>
+          <figure>
+            <img src="res/imgs/imageWideRectangle.jpg" alt="">
+            <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit</figcaption>
+          </figure>
+          <figure>
+            <img src="res/imgs/imageWideRectangle.jpg" alt="">
+            <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit</figcaption>
+          </figure>
+        </div>
+      </aside>
+      <section id="walkingStats">
+        <div class="sectionHeader">
+          <h1>Walking Stats</h1>
+        </div>
+        <div class="content">
+          <table>
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Distance</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td class="inactive">Lorem ipsum dolor sit</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td>Lorem ipsum dolor sit</td>
+                <td class="active">Lorem ipsum dolor sit</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
   </body>
 </html>
