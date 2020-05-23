@@ -9,6 +9,12 @@
 }
 .input-group-vertical
 {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 .input-group input
@@ -24,7 +30,7 @@
   padding: 0 .5rem;
   outline: none;
 }
-.input-group span
+.input-group span, .input-group-vertical span
 {
   height: 100%;
   display: inline-flex;
@@ -33,16 +39,16 @@
   font-size: inherit;
   background-color: gray;
   border-radius: 10px 0 0 10px;
-  height: 100%;
   margin: 5px 0;
   padding: 0 .5rem;
+  white-space: nowrap;
 }
 
 .input-group select
 {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url('../../imgs/imageSmallSquare.jpg') 96% / 5% no-repeat;
+  cursor: pointer;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -50,11 +56,8 @@
   font-size: inherit;
   text-align: center;
   border-radius: 0 10px 10px 0;
-
-
   outline: 0;
   border: 0;
-
   margin: 5px 0;
   padding: 0 .5rem;
 }
@@ -63,11 +66,14 @@
 {
   border-radius: 10px 10px 0 0 !important;
   width: 100%;
+  display: flex !important;
+  justify-content: center;
   text-align: center;
   padding: 10px 0 !important;
+  margin: 0 !important;
 }
 
-.input-group textarea
+.input-group-vertical textarea
 {
   font-family: "Calibri";
   padding: 10px;
@@ -80,13 +86,13 @@
   outline: none;
   resize: none;
 }
-.input-group .container
+.input-group-vertical .container
 {
   display: flex;
   width: 100%;
 }
 
-.input-group input:focus,textarea:focus,select:focus
+.input-group input:focus,input:hover,textarea:focus,textarea:hover,select:focus,select:hover
 {
   background-color: lightgray;
 }

@@ -1,13 +1,14 @@
 button
 {
   padding:0;
-  margin: 5px;
   border: none;
   border-radius: 5px;
   padding: 0.5rem;
   max-width: 100%;
   max-height: 100%;
   text-align: center;
+  cursor: pointer;
+  margin: 5px;
 }
 
 button > a

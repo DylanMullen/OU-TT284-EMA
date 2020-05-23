@@ -58,15 +58,34 @@
         <div class="sectionHeader">
           <h1>Events</h1>
         </div>
+        <!-- This is for Screenreader accessibility  -->
+        <table>
+          <thead class="hidden">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Date & Time</th>
+              <th scope="col">Meeting point</th>
+              <th scope="col">Distance</th>
+              <th scope="col">Organiser</th>
+              <th scope="col">Notes</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+        </table>
         <div class="event">
           <div class="event-contents">
             <table>
-              <tr>
-                <td><h2>Roe Green</h2></td>
-                <td><h3>01/01/1970</h3></td>
-                <td><h3>OUWC</h3></td>
-                <td><h3>10</h3></td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th scope="row" >Watcombe to Sheldon</th>
+                  <td>23/02/2019 10:30am</td>
+                  <td>Watcombe Car Park</td>
+                  <td >9 Miles</td>
+                  <td>OUWC</td>
+                  <td >Grade A walk with stsdfsdfsdfsdfeep hillsGrade A walk with stsdfsdfsdfsdfeep hillsGrade A walk with stsdfsdfsdfsdfeep hills</td>
+                  <td><span class="active">Approved</span></td>
+                </tr>
+              </tbody>
             </table>
             <div class="buttonGroup">
               <button class="btn-edit" type="button" name="button">Edit</button>
@@ -77,29 +96,19 @@
         <div class="event">
           <div class="event-contents">
             <table>
-              <tr>
-                <td><h2>Roe Green</h2></td>
-                <td><h3>01/01/1970</h3></td>
-                <td><h3>OUWC</h3></td>
-                <td><h3>10</h3></td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th scope="row" >Watcombe to Sheldon</th>
+                  <td>23/02/2019 10:30am</td>
+                  <td>Watcombe Car Park</td>
+                  <td>Unknown</td>
+                  <td>Oxford Walking</td>
+                  <td >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </td>
+                  <td><span class="semi-active">Proposed</span></td>
+                </tr>
+              </tbody>
             </table>
-            <div class="buttonGroup">
-              <button class="btn-edit" type="button" name="button">Edit</button>
-              <button class="btn-deny" type="button" name="button">Delete</button>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-contents">
-            <table>
-              <tr>
-                <td><h2>Roe Green</h2></td>
-                <td><h3>01/01/1970</h3></td>
-                <td><h3>OUWC</h3></td>
-                <td><h3>10</h3></td>
-              </tr>
-            </table>
+
             <div class="buttonGroup">
               <button class="btn-edit" type="button" name="button">Edit</button>
               <button class="btn-deny" type="button" name="button">Delete</button>
@@ -108,20 +117,42 @@
           <div class="event-edit event-selected">
             <div class="event-edit-input">
               <div class="input-group">
-                <span>Location</span>
-                <input type="text" name="" value="Roe Green">
+                <span>Name</span>
+                <input type="text" name="edit-locaton" value="Watcombe to Sheldon">
+              </div>
+              <div class="input-group">
+                <span>Meeting Point</span>
+                <input type="text" name="edit-locaton" value="Watcombe Car Park">
               </div>
               <div class="input-group">
                 <span>Date</span>
-                <input type="text" name="" value="01/01/1970">
+                <input type="text" name="edit-date" value="23/02/2019">
               </div>
               <div class="input-group">
-                <span>Organiser</span>
-                <input type="text" name="" value="OUWC">
+                <span>Time</span>
+                <input type="text" name="edit-time" value="10:30 am">
               </div>
               <div class="input-group">
-                <span>Max Participants</span>
-                <input type="text" name="" value="10">
+                <span>Distance</span>
+                <input type="text" name="edit-miles" value="Unknown">
+              </div>
+              <div class="input-group">
+                <span>Organizer</span>
+                <input type="text" name="edit-organizer" value="Oxford Walking">
+              </div>
+              <div class="input-group edit-status">
+                <span>Status</span>
+                <select name="edit-status">
+                  <option class="active" value="approved">Approved</option>
+                  <option class="semi-active" value="proposed" selected>Proposed</option>
+                  <option class="inactive" value="rejected">Rejected</option>
+                </select>
+              </div>
+              <div class="input-group-vertical">
+                <span class="span-top">Notes</span>
+                <div class="container">
+                  <textarea name="name" cols="60">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </textarea>
+                </div>
               </div>
             </div>
             <div class="buttonGroup">
@@ -131,38 +162,7 @@
             </div>
           </div>
         </div>
-        <div class="event">
-          <div class="event-contents">
-            <table>
-              <tr>
-                <td><h2>Roe Green</h2></td>
-                <td><h3>01/01/1970</h3></td>
-                <td><h3>OUWC</h3></td>
-                <td><h3>10</h3></td>
-              </tr>
-            </table>
-            <div class="buttonGroup">
-              <button class="btn-edit" type="button" name="button">Edit</button>
-              <button class="btn-deny" type="button" name="button">Delete</button>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-contents">
-            <table>
-              <tr>
-                <td><h2>Roe Green</h2></td>
-                <td><h3>01/01/1970</h3></td>
-                <td><h3>OUWC</h3></td>
-                <td><h3>10</h3></td>
-              </tr>
-            </table>
-            <div class="buttonGroup">
-              <button class="btn-edit" type="button" name="button">Edit</button>
-              <button class="btn-deny" type="button" name="button">Delete</button>
-            </div>
-          </div>
-        </div>
+
         <div class="sectionFooter">
           <div class="buttonGroup">
             <button class="btn-approve" type="button" name="button">New Event</button>
