@@ -240,7 +240,6 @@ span.active,span.semi-active,span.inactive
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  grid-template-rows: 50vh auto;
 }
 
 .informationRow
@@ -349,8 +348,7 @@ section
   align-items: center;
   background-color: var(--primary);
   /* padding: 10px; */
-  overflow-y: scroll;
-  height: 100%;
+  overflow-y: auto;
 }
 
 figure
@@ -444,5 +442,5 @@ td > img
 .row
 {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
 }
