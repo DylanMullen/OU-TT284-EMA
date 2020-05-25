@@ -1,54 +1,49 @@
 <!doctype html>
 <html>
-	<head>
-		<title>index.html</title>
-		<link rel="stylesheet" href="res\css\style.css">
-	</head>
-	<body>
-		<header>
-			<nav class="navbar-topMenu">
-				<ul>
-					<li class="nav-topMenu-item">
-						<a href="#">
-							<img src="res\images\imageSmallSquare.jpg"></img>
-							<span>Home</span>
-						</a>
-					</li>
-					<li class="nav-topMenu-item">
-						<a href="#">
-							<img src="res\images\imageSmallSquare.jpg"></img>
-							<span>Walks</span>
-						</a>
-					</li>
-					<li class="nav-topMenu-item">
-						<a href="#">
-							<img src="res\images\imageSmallSquare.jpg"></img>
-							<span>Settings</span>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
 
-		<nav class="nav-mainMenu">
-			<ul>
-				<li></li>
-				<li></li>
-			</ul>
-		</nav>
+<head>
+	<title>Admin Login | OUWC</title>
+	<link rel="stylesheet" href="res\css\style.css">
+</head>
 
-		<main>
+<body>
+	<header class="banner">
+		<div class="column">
+			<img src="res/imgs/imageWideLargeRectangle.jpg" alt="Banner of OUWC">
+		</div>
+	</header>
+	<main id="main-login">
+		<section id="login">
+			<div class="sectionHeader">
+				<h1>Admin Login</h1>
+			</div>
+			<form action="home.html" method="post">
+				<div class="login-contents">
+					<div class="column">
+						<div class="row ">
+							<div class="input-group row-span">
+								<label for="login-email">Email</label>
+								<input id="login-email" type="text" name="login-email" placeholder="Email">
+							</div>
+						</div>
+						<div class="row ">
 
-			<section>
+							<div class="input-group row-span">
+								<label for="login-password">Password</label>
+								<input id="login-password" type="password" name="login-password" placeholder="Password">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sectionFooter">
+					<div class="buttonGroup">
+						<button class="btn btn-approve" type="submit">Login</button>
+						<a class="btn btn-deny" href="#">Return</a>
+					</div>
+				</div>
+			</form>
+		</section>
+	</main>
+</body>
 
-			</section>
-			<aside>
-
-			</aside>
-		</main>
-
-		<footer>
-
-		</footer>
-	</body>
 </html>
