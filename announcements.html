@@ -1,188 +1,194 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Announcements | OUWC</title>
-    <link rel="stylesheet" href="res/css/style.css">
-  </head>
-  <body>
-    <nav class="nav-mainMenu">
-      <ul class="nav">
-        <li class="nav-logo">
-          <a href="#">
-            <img src="res/imgs/imageLargeSquare.jpg" alt="">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <img src="res/imgs/imageSmallSquare.jpg" alt="">
-            <span>Home</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="members.html">
-            <img src="res/imgs/imageSmallSquare.jpg" alt="">
-            <span>Members</span>
-          </a>
-        </li>
-        <li class="nav-item nav-item-active">
-          <a class="nav-link" href="announcements.html">
-            <img src="res/imgs/imageSmallSquare.jpg" alt="">
-            <span>News & Announcements</span>
-          </a>
-          <ul class="nav-dropdown">
-            <li class="nav-item">
-              <a class="nav-link" href="newsfeed.html">
-                <img src="res/imgs/imageSmallSquare.jpg" alt="">
-                <span>News Feed</span>
-              </a>
-            </li>
-            <li class="nav-item nav-subitem-active">
-              <a class="nav-link" href="announcements.html">
-                <img src="res/imgs/imageSmallSquare.jpg" alt="">
-                <span>Announcements</span>
-              </a>
-            </li>
-           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="members.html">
-            <img src="res/imgs/imageSmallSquare.jpg" alt="">
-            <span>Events</span>
-          </a>
-        </li>
-        <li class="nav-item nav-bottom">
-          <a class="nav-link" href="#">
-            <img src="res/imgs/imageSmallSquare.jpg" alt="">
-            <span>Logout</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <main id="announcements">
-      <section id="announcementsFeed">
-        <div class="sectionHeader">
-          <h1>Announcements</h1>
-        </div>
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Date</th>
-                <th>Information</th>
-                <th>Manage</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Lorem ipsum dolor sit amet</td>
-                <td>01/01/1970</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cil.</td>
-                <td>
-                  <div class="buttonGroup">
-                    <button class="btn-edit" type="button" name="button">Edit</button>
-                    <button class="btn-deny" type="button" name="button">Delete</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Lorem ipsum dolor sit amet</td>
-                <td>01/01/1970</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cil.</td>
-                <td>
-                  <div class="buttonGroup">
-                    <button class="btn-edit" type="button" name="button">Edit</button>
-                    <button class="btn-deny" type="button" name="button">Delete</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Lorem ipsum dolor sit amet</td>
-                <td>01/01/1970</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cil.</td>
-                <td>
-                  <div class="buttonGroup">
-                    <button class="btn-edit" type="button" name="button">Edit</button>
-                    <button class="btn-deny" type="button" name="button">Delete</button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <aside>
-        <div class="sectionHeader">
-          <h1>Statistics</h1>
-        </div>
-        <div class="information">
-          <div class="informationRow">
-            <h2>Announcements</h2>
-            <p>3</p>
-          </div>
-          <div class="informationRow">
-            <h2>People Subscribed</h2>
-            <p>1000</p>
-          </div>
-          <div class="informationRow">
-            <h2>% People not Subscribed</h2>
-            <p>75%</p>
-          </div>
-          <div class="informationRow">
-            <h2>Lorem Ipsum Sia Dia</h2>
-            <p>75%</p>
-          </div>
-          <figure>
-            <img src="res/imgs/imageWideRectangle.jpg" alt="Graph representing the ratio of members subscribed">
-            <figcaption>Graph representing the ratio of members subscribed</figcaption>
-          </figure>
-        </div>
 
-      </aside>
-      <section id="createAnnouncements">
-        <div class="sectionHeader">
-          <h1>Create a new Announcement</h1>
-        </div>
-        <form action="announcements.html" method="post">
-          <div class="newsPost-contents">
-            <div class="newsPost-info">
-              <h2>Enter information to submit the Announcement</h2>
-              <p>Submitting as User<br>AdminUser123</p>
-            </div>
-            <div class="row">
-              <div class="input-group row-span">
-                <label for="newAnnounce-title">Announcement Title</label>
-                <input type="text" id="newAnnounce-title" name="newAnnounce-title" placeholder="Enter Title...">
-              </div>
-            </div>
-            <div class="input-group-vertical">
-              <label for="news-edit-content" class="span-top">Announcement Contents</label>
-              <div class="container">
-                <textarea id="news-edit-content" name="news-edit-content" rows="4" maxlength="300" placeholder="Enter Announcement Post (max 300 characters)"></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-group">
-                <label for="newAnnounce-release_date">Release Date</label>
-                <input type="date" id="newAnnounce-release_date" name="newAnnounce-release_date">
-              </div>
-              <div class="input-group">
-                <label for="newAnnounce-release_date">Attachment</label>
-                <input class="ye" type="file" name="" value="">
-                <!-- <input type="date" id="newAnnounce -release_date" name="newAnnounce-release_date" value=""> -->
-              </div>
-            </div>
-          </div>
-          <div class="sectionFooter">
-            <div class="buttonGroup">
-              <button class="btn-approve" type="submit">Create Announcement</button>
-              <a class="btn btn-edit" href="announcements.html">Cancel Announcement</a>
-            </div>
-          </div>
-        </form>
+<head>
+  <meta charset="utf-8">
+  <title>Announcements | OUWC</title>
+  <link rel="stylesheet" href="res/css/style.css">
+</head>
 
-      </section>
-    </main>
-  </body>
+<body>
+  <nav class="nav-mainMenu">
+    <ul class="nav">
+      <li class="nav-logo">
+        <a href="#">
+          <img src="res/imgs/imageLargeSquare.jpg" alt="">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="members.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+          <span>Members</span>
+        </a>
+      </li>
+      <li class="nav-item nav-item-active">
+        <a class="nav-link" href="announcements.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+          <span>News & Announcements</span>
+        </a>
+        <ul class="nav-dropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="newsfeed.html">
+              <img src="res/imgs/imageSmallSquare.jpg" alt="">
+              <span>News Feed</span>
+            </a>
+          </li>
+          <li class="nav-item nav-subitem-active">
+            <a class="nav-link" href="announcements.html">
+              <img src="res/imgs/imageSmallSquare.jpg" alt="">
+              <span>Announcements</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="members.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+          <span>Events</span>
+        </a>
+      </li>
+      <li class="nav-item nav-bottom">
+        <a class="nav-link" href="#">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+          <span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main id="announcements">
+    <section id="announcementsFeed">
+      <div class="sectionHeader">
+        <h1>Announcements</h1>
+      </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Date</th>
+              <th>Information</th>
+              <th>Manage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lorem ipsum dolor sit amet</td>
+              <td>01/01/1970</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cil.</td>
+              <td>
+                <div class="buttonGroup">
+                  <button class="btn-edit" type="button" name="button">Edit</button>
+                  <button class="btn-deny" type="button" name="button">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet</td>
+              <td>01/01/1970</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cil.</td>
+              <td>
+                <div class="buttonGroup">
+                  <button class="btn-edit" type="button" name="button">Edit</button>
+                  <button class="btn-deny" type="button" name="button">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet</td>
+              <td>01/01/1970</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cil.</td>
+              <td>
+                <div class="buttonGroup">
+                  <button class="btn-edit" type="button" name="button">Edit</button>
+                  <button class="btn-deny" type="button" name="button">Delete</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <aside>
+      <div class="sectionHeader">
+        <h1>Statistics</h1>
+      </div>
+      <div class="information">
+        <div class="informationRow">
+          <h2>Announcements</h2>
+          <p>3</p>
+        </div>
+        <div class="informationRow">
+          <h2>People Subscribed</h2>
+          <p>1000</p>
+        </div>
+        <div class="informationRow">
+          <h2>% People not Subscribed</h2>
+          <p>75%</p>
+        </div>
+        <div class="informationRow">
+          <h2>Lorem Ipsum Sia Dia</h2>
+          <p>75%</p>
+        </div>
+        <figure>
+          <img src="res/imgs/imageWideRectangle.jpg" alt="Graph representing the ratio of members subscribed">
+          <figcaption>Graph representing the ratio of members subscribed</figcaption>
+        </figure>
+      </div>
+
+    </aside>
+    <section id="createAnnouncements">
+      <div class="sectionHeader">
+        <h1>Create a new Announcement</h1>
+      </div>
+      <form action="announcements.html" method="post">
+        <div class="newsPost-contents">
+          <div class="newsPost-info">
+            <h2>Enter information to submit the Announcement</h2>
+            <p>Submitting as User<br>AdminUser123</p>
+          </div>
+          <div class="row">
+            <div class="input-group row-span">
+              <label for="newAnnounce-title">Announcement Title</label>
+              <input type="text" id="newAnnounce-title" name="newAnnounce-title" placeholder="Enter Title...">
+            </div>
+          </div>
+          <div class="input-group-vertical">
+            <label for="news-edit-content" class="span-top">Announcement Contents</label>
+            <div class="container">
+              <textarea id="news-edit-content" name="news-edit-content" rows="4" maxlength="300" placeholder="Enter Announcement Post (max 300 characters)"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group">
+              <label for="newAnnounce-release_date">Release Date</label>
+              <input type="date" id="newAnnounce-release_date" name="newAnnounce-release_date">
+            </div>
+            <div class="input-group">
+              <label for="newAnnounce-release_date">Attachment</label>
+              <input class="ye" type="file" name="" value="">
+              <!-- <input type="date" id="newAnnounce -release_date" name="newAnnounce-release_date" value=""> -->
+            </div>
+          </div>
+        </div>
+        <div class="sectionFooter">
+          <div class="buttonGroup">
+            <button class="btn-approve" type="submit">Create Announcement</button>
+            <a class="btn btn-edit" href="announcements.html">Cancel Announcement</a>
+          </div>
+        </div>
+      </form>
+
+    </section>
+  </main>
+</body>
+
 </html>
