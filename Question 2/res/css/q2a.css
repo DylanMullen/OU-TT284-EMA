@@ -8,7 +8,7 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: lightgray;
+  background-color:#E5E7E9;
 }
 
 main {
@@ -37,9 +37,9 @@ section
 #header-addwalk
 {
   margin: 0 0 0 15rem;
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 2.5rem;
   padding-bottom: 0;
-  height: 20%;
+  height: 25%;
 }
 
 /**/
@@ -51,25 +51,27 @@ section
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../imgs/imageWideLargeRectangle.jpg');
-  background-size: 100% 100%;
 
+  background-image: url('../imgs/people-walking.jpg');
+  background-size: 100%;
+  background-position: 0% 60%;
+  border-radius: .5rem;
 }
 
 .section-header {
   border-radius: 10px 10px 0 0;
-  background-color: #2980B9;
+  background-color: #2471A3;
   padding: 15px 1rem;
 }
 
 .section-header>h1 {
   margin: 0;
   text-align: center;
-  ;
+  color: white;
 }
 
 .section-footer {
-  background-color: #2980B9;
+  background-color: #2471A3;
   border-radius: 0 0 10px 10px;
   padding: .25rem;
 }
@@ -80,7 +82,7 @@ section
   padding: 0;
   height: 100vh;
   width: 15rem;
-  background-color: #1F618D;
+  background-color: #2471A3;
   position: fixed;
 }
 
@@ -97,7 +99,13 @@ section
 
 .nav-logo
 {
-  padding: 5px 0;
+  padding: .5rem;
+}
+
+.nav-logo img
+{
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .nav-bottom
@@ -111,19 +119,22 @@ section
   width: 100%;
 }
 
-.nav-item:hover
+.nav-item:hover,.nav-item-active
 {
-  background-color: #1A5276;
+  background-color: #21618C;
 }
 
-.nav-item-active
+
+.nav-subitem-active,
+.nav-dropdown > .nav-item:hover
 {
-  background-color: #1A5276;
+  background-color: #1B4F72 ;
 }
 
-.nav-subitem-active
+.nav-item img
 {
-  background-color: #154360;
+  filter: invert(100%);
+  width: 2rem;
 }
 
 .nav-link
@@ -156,10 +167,6 @@ section
   padding-left:  2rem;
 }
 
-.nav-dropdown > .nav-item:hover
-{
-  background-color: #154360;
-}
 
 .nav-topMenu ul > li > a
 {
@@ -197,7 +204,7 @@ section
   margin: 5px 0;
   padding: 0 .5rem;
   outline: none;
-  background-color: white;
+  background-color:#ECF0F1;
 }
 
 .input-group span, .input-group-vertical span, .input-group label, .input-group-vertical label {
@@ -206,7 +213,8 @@ section
   align-items: center;
   text-align: center;
   font-size: inherit;
-  background-color: gray;
+  background-color:#2874A6;
+  color: #F2F3F4;
   border-radius: 10px 0 0 10px;
   margin: 5px 0;
   padding: 0 .5rem;
@@ -248,6 +256,7 @@ section
   font-size: inherit;
   border: 0;
   border-radius: 0 0 10px 10px;
+  background-color: #ECF0F1;
   margin: 0;
   outline: none;
   resize: none;
@@ -306,7 +315,8 @@ button:hover, .btn:hover, button:focus, .btn:focus
 {
   display:flex;
   flex-direction: column;
-  background-color: lightblue;
+  background-color: #5e9fd5;
+  padding: .5rem 1rem;
 }
 
 .row
