@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Walking Event | OUWC Admin</title>
+  <meta name="description" content="Create New Walking Event">
+	<meta name="author" content="Dylan Mullen">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <link rel="stylesheet" href="res/css/q2b.css">
+</head>
+
+<body>
+  <nav class="nav-mainMenu">
+    <ul class="nav">
+      <li class="nav-logo">
+        <a href="home.html">
+          <img src="res/imgs/logo.png" alt="OUWC Icon">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">
+          <img src="res/imgs/home.png" alt="Home Icon">
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="members.html">
+          <img src="res/imgs/members.png" alt="Members Icon">
+          <span>Members</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="announcements.html">
+          <img src="res/imgs/megaphone.png" alt="News & Announcements Icon">
+          <span>News & Announcements</span>
+        </a>
+      </li>
+      <li class="nav-item  nav-item-active">
+        <a class="nav-link" href="events.html">
+          <img src="res/imgs/event.png" alt="Events Icon">
+          <span>Events</span>
+        </a>
+        <ul class="nav-dropdown">
+          <li class="nav-item">
+            <a class="nav-link nav-subitem-active" href="#">
+              <img src="res/imgs/add.png" alt="New Event Icon">
+              <span>New Event</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item nav-bottom">
+        <a class="nav-link" href="index.html">
+          <img src="res/imgs/logout.png" alt="Logout Icon">
+          <span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <header id="header-addwalk">
+    <div class="banner">
+    </div>
+  </header>
+  <main id="main-addwalk">
+    <section id="create-walkevent">
+      <div class="section-header">
+        <h1>New Walk Event</h1>
+      </div>
+      <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+        <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef">
+        <div class="section-content">
+          <div class="row">
+            <div class="input-group span-row">
+              <label for="event-name">Name</label>
+              <input id="event-name" type="text" name="event-name" placeholder="Enter Walk Name...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group">
+              <label for="event-date">Event Date</label>
+              <input id="event-date" type="text" name="event-date" placeholder="dd/mm/yyyy">
+            </div>
+            <div class="input-group">
+              <label for="event-time">Start Time</label>
+              <input id="event-time" type="text" name="event-time" placeholder="24hr Clock Format">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group span-row">
+              <label for="event-meeting">Meeting Point</label>
+              <input id="event-meeting" type="text" name="event-meeting" placeholder="Enter the meeting point...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group">
+              <label for="event-distance">Distance (Miles)</label>
+              <input id="event-distance" type="number" name="event-distance" placeholder="0">
+            </div>
+            <div class="input-group">
+              <label for="event-status">Status</label>
+              <select id="event-status" name="event-status">
+                <option class="status-approved" value="approved" selected>Approved</option>
+                <option class="status-proposed" value="proposed">Proposed</option>
+                <option class="status-rejected" value="rejected">Rejected</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group-vertical span-row">
+            <label for="event-notes" class="span-top">Walking Event Notes</label>
+            <div class="container">
+              <textarea id="event-notes" name="event-notes" rows="4" maxlength="300" placeholder="Enter Event Notes (max 300 characters)"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="section-footer">
+          <div class="button-group">
+            <button class="btn-submit" type="submit">Create Walk Event</button>
+            <a class="btn btn-cancel" href="">Cancel</a>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
