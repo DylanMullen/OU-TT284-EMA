@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Newsfeed | OUWC</title>
+  <meta name="description" content="List of all news items">
+  <meta name="author" content="Dylan Mullen">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <link rel="stylesheet" href="res/css/style.css">
 </head>
 
@@ -11,51 +14,51 @@
   <nav class="nav-mainMenu">
     <ul class="nav">
       <li class="nav-logo">
-        <a href="#">
-          <img src="res/imgs/imageLargeSquare.jpg" alt="">
+        <a href="home.html">
+          <img src="res/imgs/imageLargeSquare.jpg" alt="OUWC Icon">
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+        <a class="nav-link" href="home.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Home Icon">
           <span>Home</span>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item ">
         <a class="nav-link" href="members.html">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Members Icon">
           <span>Members</span>
         </a>
       </li>
       <li class="nav-item nav-item-active">
         <a class="nav-link" href="announcements.html">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="News & Announcements Icon">
           <span>News & Announcements</span>
         </a>
         <ul class="nav-dropdown">
-          <li class="nav-item  nav-subitem-active">
-            <a class="nav-link" href="newsfeed.html">
-              <img src="res/imgs/imageSmallSquare.jpg" alt="">
-              <span>News Feed</span>
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="announcements.html">
-              <img src="res/imgs/imageSmallSquare.jpg" alt="">
+              <img src="res/imgs/imageSmallSquare.jpg" alt="Announcement Icon">
               <span>Announcements</span>
+            </a>
+          </li>
+          <li class="nav-item nav-subitem-active">
+            <a class="nav-link" href="newsfeed.html">
+              <img src="res/imgs/imageSmallSquare.jpg" alt="News Icon">
+              <span>News</span>
             </a>
           </li>
         </ul>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="members.html">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+      <li class="nav-item ">
+        <a class="nav-link" href="events.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Events Icon">
           <span>Events</span>
         </a>
       </li>
       <li class="nav-item nav-bottom">
-        <a class="nav-link" href="#">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+        <a class="nav-link" href="index.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Logout Icon">
           <span>Logout</span>
         </a>
       </li>
@@ -111,17 +114,17 @@
                   <div class="row">
                     <div class="input-group">
                       <label for="news-edit-title">Title</label>
-                      <input type="text" name="news-edit-title" value="Running for Gold">
+                      <input id="news-edit-title" type="text" name="news-edit-title" value="Running for Gold">
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-group">
                       <label for="news-edit-release_date">Release Date</label>
-                      <input type="date" name="news-edit-release_date" value="2020-05-20">
+                      <input id="news-edit-release_date" type="text" name="news-edit-release_date" value="2020-05-20">
                     </div>
                     <div class="input-group">
                       <label for="news-edit-expiry_date">Expiry Date</label>
-                      <input type="date" name="news-edit-expiry_date" value="2020-06-04">
+                      <input id="news-edit-expiry_date" type="text" name="news-edit-expiry_date" value="2020-06-04">
                     </div>
                   </div>
                   <div class="input-group-vertical">
@@ -140,7 +143,6 @@
                   <button class="btn-deny" type="button" name="button">Delete Post</button>
                 </div>
               </td>
-            </td>
 
           </tr>
           <tr>
@@ -166,7 +168,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="create-news">
       <div class="section-header">
         <h1>Create News Post</h1>
       </div>
@@ -185,11 +187,11 @@
           <div class="row">
             <div class="input-group">
               <label for="newsPost-release_date">Release Date</label>
-              <input type="date" id="newsPost-release_date" name="newsPost-release_date" value="">
+              <input type="text" id="newsPost-release_date" name="newsPost-release_date" value="">
             </div>
             <div class="input-group">
               <label for="newsPost-expiry_date">Expiry Date</label>
-              <input type="date" id="newsPost-expiry_date" name="newsPost-expiry_date" value="">
+              <input type="text" id="newsPost-expiry_date" name="newsPost-expiry_date" value="">
             </div>
           </div>
           <!-- <div class="row"> -->

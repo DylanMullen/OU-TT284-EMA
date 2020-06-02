@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Profile | OUWC</title>
+
+  <meta name="description" content="Member Profile Page">
+  <meta name="author" content="Dylan Mullen">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <link rel="stylesheet" href="res/css/style.css">
 </head>
 
@@ -11,37 +15,37 @@
   <nav class="nav-mainMenu">
     <ul class="nav">
       <li class="nav-logo">
-        <a href="#">
-          <img src="res/imgs/imageLargeSquare.jpg" alt="">
+        <a href="home.html">
+          <img src="res/imgs/imageLargeSquare.jpg" alt="OUWC Icon">
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+        <a class="nav-link" href="home.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Home Icon">
           <span>Home</span>
         </a>
       </li>
       <li class="nav-item nav-item-active">
         <a class="nav-link" href="members.html">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Members Icon">
           <span>Members</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="newsfeed.html">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+        <a class="nav-link" href="announcements.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="News & Announcements Icon">
           <span>News & Announcements</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+        <a class="nav-link" href="events.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Events Icon">
           <span>Events</span>
         </a>
       </li>
       <li class="nav-item nav-bottom">
-        <a class="nav-link" href="#">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+        <a class="nav-link" href="index.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Logout Icon">
           <span>Logout</span>
         </a>
       </li>
@@ -57,29 +61,29 @@
         <div class="userInformation">
           <div class="row">
             <div class="input-group">
-              <span>Name</span>
-              <input type="text" name="" value="John Smith">
+              <label for="edit-name">Name</label>
+              <input id="edit-name" type="text" name="edit-name" value="John Smith">
             </div>
             <div class="input-group">
-              <span>Age</span>
-              <input type="text" name="" value="18">
+              <label for="edit-age">Age</label>
+              <input id="edit-age" type="text" name="edit-age" value="18">
             </div>
           </div>
           <div class="input-group">
-            <span>Email</span>
-            <input type="text" name="" value="loremipsum@dolor.sit">
+            <label for="edit-email">Email</label>
+            <input id="edit-email" type="text" name="edit-email" value="loremipsum@dolor.sit">
           </div>
           <div class="row">
             <div class="input-group">
-              <span>Newsletter</span>
-              <select class="" name="">
+              <label for="edit-consent">Newsletter</label>
+              <select id="edit-consent" name="edit-consent">
                 <option value="active">Consented</option>
                 <option value="active">Not Consented</option>
               </select>
             </div>
             <div class="input-group">
-              <span>Activity</span>
-              <select class="" name="">
+              <label for="edit-activity">Activity</label>
+              <select id="edit-activity" name="edit-activity">
                 <option value="active">Active</option>
                 <option value="semi-active">Semi-Active</option>
                 <option value="inactive">Inactive</option>
@@ -101,11 +105,11 @@
       </div>
       <div class="content-vertical">
         <figure>
-          <img alt="Profile Activity Graph" src="res/imgs/imageWideRectangle.jpg" alt="">
+          <img alt="Profile Activity Graph" src="res/imgs/imageWideRectangle.jpg">
           <figcaption>Profile Activity Graph</figcaption>
         </figure>
         <figure>
-          <img alt="Profile Engagement Graph" src="res/imgs/imageWideRectangle.jpg" alt="">
+          <img alt="Profile Engagement Graph" src="res/imgs/imageWideRectangle.jpg">
           <figcaption>Profile Engagement Graph</figcaption>
         </figure>
       </div>

@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Announcements | OUWC</title>
+  <meta name="description" content="List of Announcements">
+  <meta name="author" content="Dylan Mullen">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <link rel="stylesheet" href="res/css/style.css">
 </head>
 
@@ -11,51 +14,51 @@
   <nav class="nav-mainMenu">
     <ul class="nav">
       <li class="nav-logo">
-        <a href="#">
-          <img src="res/imgs/imageLargeSquare.jpg" alt="">
+        <a href="home.html">
+          <img src="res/imgs/imageLargeSquare.jpg" alt="OUWC Icon">
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+        <a class="nav-link" href="home.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Home Icon">
           <span>Home</span>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item ">
         <a class="nav-link" href="members.html">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Members Icon">
           <span>Members</span>
         </a>
       </li>
       <li class="nav-item nav-item-active">
         <a class="nav-link" href="announcements.html">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="News & Announcements Icon">
           <span>News & Announcements</span>
         </a>
         <ul class="nav-dropdown">
-          <li class="nav-item">
-            <a class="nav-link" href="newsfeed.html">
-              <img src="res/imgs/imageSmallSquare.jpg" alt="">
-              <span>News Feed</span>
-            </a>
-          </li>
           <li class="nav-item nav-subitem-active">
             <a class="nav-link" href="announcements.html">
-              <img src="res/imgs/imageSmallSquare.jpg" alt="">
+              <img src="res/imgs/imageSmallSquare.jpg" alt="Announcement Icon">
               <span>Announcements</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newsfeed.html">
+              <img src="res/imgs/imageSmallSquare.jpg" alt="News Icon">
+              <span>News</span>
             </a>
           </li>
         </ul>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="members.html">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+      <li class="nav-item ">
+        <a class="nav-link" href="events.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Events Icon">
           <span>Events</span>
         </a>
       </li>
       <li class="nav-item nav-bottom">
-        <a class="nav-link" href="#">
-          <img src="res/imgs/imageSmallSquare.jpg" alt="">
+        <a class="nav-link" href="index.html">
+          <img src="res/imgs/imageSmallSquare.jpg" alt="Logout Icon">
           <span>Logout</span>
         </a>
       </li>
@@ -76,7 +79,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="news-selected-darker">
+            <tr>
               <td>Lorem ipsum dolor sit amet</td>
               <td>01/01/1970</td>
               <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -130,11 +133,11 @@
           <div class="row">
             <div class="input-group">
               <label for="newAnnounce-release_date">Release Date</label>
-              <input type="date" id="newAnnounce-release_date" name="newAnnounce-release_date">
+              <input type="text" id="newAnnounce-release_date" name="newAnnounce-release_date">
             </div>
             <div class="input-group">
               <label for="newAnnounce-release_date">Attachment</label>
-              <input class="ye" type="file" name="" value="">
+              <input type="file" name="newAnnounce-attachment">
               <!-- <input type="date" id="newAnnounce -release_date" name="newAnnounce-release_date" value=""> -->
             </div>
           </div>

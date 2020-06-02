@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Add Walk | OUWC</title>
+  <meta name="description" content="Create New Walking Event">
+  <meta name="author" content="Dylan Mullen">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <link rel="stylesheet" href="res/css/style.css">
 </head>
 
@@ -15,7 +18,7 @@
           <img src="res/imgs/imageLargeSquare.jpg" alt="OUWC Icon">
         </a>
       </li>
-      <li class="nav-item nav-item-active">
+      <li class="nav-item">
         <a class="nav-link" href="home.html">
           <img src="res/imgs/imageSmallSquare.jpg" alt="Home Icon">
           <span>Home</span>
@@ -27,25 +30,11 @@
           <span>Members</span>
         </a>
       </li>
-      <li class="nav-item nav-item-active">
+      <li class="nav-item">
         <a class="nav-link" href="announcements.html">
           <img src="res/imgs/imageSmallSquare.jpg" alt="News & Announcements Icon">
           <span>News & Announcements</span>
         </a>
-        <ul class="nav-dropdown">
-          <li class="nav-item nav-subitem-active">
-            <a class="nav-link" href="announcements.html">
-              <img src="res/imgs/imageSmallSquare.jpg" alt="Announcement Icon">
-              <span>Announcements</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="newsfeed.html">
-              <img src="res/imgs/imageSmallSquare.jpg" alt="News Icon">
-              <span>News</span>
-            </a>
-          </li>
-        </ul>
       </li>
       <li class="nav-item  nav-item-active">
         <a class="nav-link" href="events.html">
@@ -53,8 +42,8 @@
           <span>Events</span>
         </a>
         <ul class="nav-dropdown">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li class="nav-item nav-subitem-active">
+            <a class="nav-link" href="addwalk.html">
               <img src="res/imgs/imageSmallSquare.jpg" alt="New Event Icon">
               <span>New Event</span>
             </a>
@@ -71,7 +60,7 @@
   </nav>
   <header id="header-addwalk">
     <div class="banner">
-      <h2>ye</h2>
+      <p>Image of People Walking</p>
     </div>
   </header>
   <main id="main-addwalk">
@@ -79,60 +68,56 @@
       <div class="section-header">
         <h1>New Walk Event</h1>
       </div>
-      <form class="" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
         <div class="section-content">
           <div class="row">
-            <div class="input-group span-row">
-              <label for="">Name</label>
-              <input type="text" name="" placeholder="Enter Walk Name...">
+            <div class="input-group row-span">
+              <label for="event-name">Name</label>
+              <input id="event-name" type="text" name="event-name" placeholder="Enter Walk Name...">
             </div>
           </div>
           <div class="row">
             <div class="input-group">
-              <label for="">Event Date</label>
-              <input type="date" name="" placeholder="">
+              <label for="event-date">Event Date</label>
+              <input id="event-date" type="text" name="event-date" placeholder="dd/mm/yyyy">
             </div>
             <div class="input-group">
-              <label for="">Start Time</label>
-              <input type="time" name="" placeholder="">
+              <label for="event-time">Start Time</label>
+              <input id="event-time" type="text" name="event-time" placeholder="24hr Clock Format">
             </div>
           </div>
           <div class="row">
-            <div class="input-group span-row">
-              <label for="">Meeting Point</label>
-              <input type="text" name="" placeholder="">
+            <div class="input-group row-span">
+              <label for="event-meeting">Meeting Point</label>
+              <input id="event-meeting" type="text" name="event-meeting" placeholder="Please enter the meeting point...">
             </div>
           </div>
           <div class="row">
             <div class="input-group">
-              <label for="">Distance (Miles)</label>
-              <input type="number" name="" placeholder="">
+              <label for="event-distance">Distance (Miles)</label>
+              <input id="event-distance" type="number" name="event-distance" placeholder="0">
             </div>
             <div class="input-group">
-              <label for="">Status</label>
-              <select class="" name="">
-                <option class="status-approved" value="" selected>Approved</option>
-                <option class="status-proposed" value="">Proposed</option>
-                <option class="status-rejected" value="">Rejected</option>
+              <label for="event-status">Status</label>
+              <select id="event-status" name="event-status">
+                <option class="status-approved" value="approved" selected>Approved</option>
+                <option class="status-proposed" value="proposed">Proposed</option>
+                <option class="status-rejected" value="rejected">Rejected</option>
               </select>
             </div>
           </div>
-          <!-- <div class="row"> -->
           <div class="input-group-vertical span-row">
-            <label for="news-edit-content" class="span-top">News Post Content</label>
+            <label for="event-notes" class="span-top">Walking Event Notes</label>
             <div class="container">
-              <textarea id="news-edit-content" name="news-edit-content" rows="4" maxlength="300" placeholder="Enter News Post (max 300 characters)"></textarea>
+              <textarea id="event-notes" name="event-notes" rows="4" maxlength="300" placeholder="Enter Event Notes (max 300 characters)"></textarea>
             </div>
           </div>
-          <!-- </div> -->
         </div>
         <div class="section-footer">
-          <div class="button-group">
-            <button class="btn-submit" type="submit">Create Walk Event</button>
-            <a class="btn btn-cancel" href="">Cancel</a>
+          <div class="buttonGroup">
+            <button class="btn-approve" type="submit">Create Walk Event</button>
+            <a class="btn btn-edit" href="">Cancel</a>
           </div>
         </div>
-      </form>
     </section>
   </main>
 </body>
