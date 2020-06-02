@@ -1,0 +1,112 @@
+:root{
+  font-family: "Calibri";
+  font-size: 18px;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+main {
+  margin: 0 0 0 15rem;
+  padding: 1.5rem 2.5rem;
+}
+
+
+/**/
+.nav-mainMenu
+{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 15rem;
+  background-color: #1F618D;
+  position: fixed;
+}
+
+.nav
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  height: 100%;
+}
+
+.nav-logo
+{
+  padding: 5px 0;
+}
+
+.nav-bottom
+{
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+.nav-item
+{
+  width: 100%;
+}
+
+.nav-item:hover
+{
+  background-color: #1A5276;
+}
+
+.nav-item-active
+{
+  background-color: #1A5276;
+}
+
+.nav-subitem-active
+{
+  background-color: #154360;
+}
+
+.nav-link
+{
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link span
+{
+  padding: 0 .75rem;
+  color: white;
+}
+
+.navbar-topMenu
+{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-dropdown
+{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left:  2rem;
+}
+
+.nav-dropdown > .nav-item:hover
+{
+  background-color: #154360;
+}
+
+.nav-topMenu ul > li > a
+{
+  display: flex;
+  align-items: center;
+}
