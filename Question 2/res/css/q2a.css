@@ -13,7 +13,7 @@ body, html {
 
 main {
   margin: 0 0 0 15rem;
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 2.5rem;
 }
 
 section
@@ -55,6 +55,7 @@ section
   background-image: url('../imgs/people-walking.jpg');
   background-size: 100%;
   background-position: 0% 60%;
+  background-repeat: no-repeat;
   border-radius: .5rem;
 }
 
@@ -222,8 +223,7 @@ section
 }
 
 .input-group select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
   background-color: white;
   height: 100%;
