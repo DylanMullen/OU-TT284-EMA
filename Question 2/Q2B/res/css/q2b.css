@@ -315,9 +315,7 @@ button:hover, .btn:hover, button:focus, .btn:focus {
     margin-top: 5rem;
   }
 
-  .row {
-    grid-template-columns: 100%;
-  }
+
 
   .nav-mainMenu {
     position: absolute;
@@ -357,12 +355,13 @@ button:hover, .btn:hover, button:focus, .btn:focus {
   }
 }
 
-@media screen and (max-width: 985px)
+@media screen and (max-width: 950px)
 {
   span
   {
     display: none !important;
   }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -378,6 +377,36 @@ button:hover, .btn:hover, button:focus, .btn:focus {
   {
     padding: .5rem .25rem;
   }
+  .row {
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 555px)
+{
+
+    .input-group span, .input-group-vertical span, .input-group label, .input-group-vertical label {
+      border-radius: 10px 10px 0 0 !important;
+      width: 100%;
+      display: flex !important;
+      justify-content: center;
+      text-align: center;
+      padding: 2.5px 0;
+      margin: 0 ;
+    }
+    .input-group input, .input-group select
+    {
+      margin: 0;
+      padding: 2.5px 0;
+      text-indent: 10px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .input-group
+    {
+      flex-direction: column;
+      justify-content: center;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -407,4 +436,5 @@ button:hover, .btn:hover, button:focus, .btn:focus {
   {
     width: 100%!important;
   }
+
 }
